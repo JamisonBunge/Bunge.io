@@ -18,26 +18,66 @@
         <a href="http://catan.bunge.io">click me</a>
     </div> -->
     <div id="menu">
-        <h1>bunge.io</h1>
-        <span class=r-version>v0.1</span>
-        <h2>A home for my web projects. Check out the links below</h1>
-            <ul>
-                <li><a href="https://catan.bunge.io" target="_blank">
-                        <span class="label">Catan Generator <i class="fas fa-dice-five"></i></span>
-                    </a></li>
-                <li><a href="http://www.jamisonbunge.com" target="_blank">
-                        <span class="label">Web Portfolio <i class="fas fa-portrait"></i></span>
-                    </a></li>
-                <li><a href="https://sw.bunge.io" target="_blank">
-                        <span class="label">Script Editor<i class="fas fa-portrait"></i></span>
-                    </a></li>
-                <li><a href="https://retrobox.bunge.io" target="_blank">
-                        <span class="label">Retrobox<i class="fas fa-portrait"></i></span>
-                    </a></li>
+        <h1>Jamison Bunge</h1>
+        <img src="assets/jami.png" id="avi" />
+        <div id="main-footer">
+            <ul id="main-footer">
+                <li><a target="_blank" href="https://github.com/JamisonBunge"><i
+                            class="othericon fab fa-github fa-2x"></i></li>
+                </a>
+                <li><a target="_blank" href="https://www.instagram.com/jamisonbunge/"><i
+                            class="othericon fab fa-instagram fa-2x"></i>
+                </li></a>
+                <li><a target="_blank" href="https://www.linkedin.com/in/jamison-bunge/"><i
+                            class="othericon fab fa-linkedin fa-2x"></i></li></a>
+
             </ul>
+        </div>
+
+        <hr />
+        <h2>About Me</h2>
+        <h3> Studied EE and CS at Columbia University. Currently working as a software engineer in New York City. This
+            website is under construction.</h3>
+        <hr />
+        <h2>Donate</h2>
+        <h3>It costs money to host my projects and I don’t run ads.
+            If you have the means and want to buy me a coffee / chip in, you're more than welcome to click below :)
+        </h3>
+
+        <div id="paypal">
+
+
+            <form id="paypalform" action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="business" value="VGXQCGB7S2XFQ" />
+                <input type="hidden" name="no_recurring" value="0" />
+                <input type="hidden" name="item_name"
+                    value="It costs money to host my projects. If you enjoy the generator & want to chip in / buy me coffee, this is the way :)" />
+                <input type="hidden" name="currency_code" value="USD" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0"
+                    name="submit" title="PayPal - The safer, easier way to pay online!"
+                    alt="Donate with PayPal button" />
+                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+
+
+        </div>
+        <hr />
+
+        <h2>My Software</h2>
+        <div id="wrap" class="mybuttons">
+            <ul class="mybuttons">
+                <li class="mybutton"><a href="https://catan.bunge.io" target="_blank"><span class="label">Catan
+                            Generator <i class="myicon fas fa-dice-five"></i></span></a></li>
+                <li class="mybutton"><span class="label">Fantasy Football Stats Platform <i
+                            class="myicon fas fa-football-ball"></i></span></a></li>
+                <li class="mybutton"><a href="https://retrobox.bunge.io" target="_blank"><span class="label">Retrobox
+                            (Senior Project) <i class="myicon fas fa-compact-disc"></i></span></a></li>
+            </ul>
+        </div>
     </div>
     <!-- particles.js container -->
-    <div id="particles-js"></div>
+    <div id=" particles-js">
+    </div>
     <script>particlesJS("particles-js", { "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 2, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true }); var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function () { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);; </script>
 
 </body>
