@@ -102,10 +102,11 @@ color: #fff;
 
 }
 
-
 a:visited{
-  color:#222;
+  color:rgba(39, 22, 22, 0);
+
 }
+
 
 
 
@@ -153,6 +154,17 @@ ul {
   display:inline-block;
   vertical-align:top;
   width:100%;
+  color:#000022
+}
+
+.label:hover{
+  display:inline-block;
+  vertical-align:top;
+  width:100%;
+  color:#fff;
+}
+.mybutton a:visited{
+  color:rgba(194, 33, 33, 0);
 
 }
 
