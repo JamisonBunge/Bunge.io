@@ -35,12 +35,6 @@ canvas{
   box-sizing: border-box;
 
 }
-/*
-#test {
-  height:10000px;
-} */
-
-
 h1 {
   font-size:1.8em;
   font-weight:700;
@@ -62,7 +56,7 @@ h2 {
 
 h3{
   font-weight:400;
-  font-size:.8em;
+  font-size:.88em;
   margin-bottom:16px;
   text-align:center;
   line-height:1.3em;
@@ -91,10 +85,10 @@ h3{
   color:#222;
   border-radius: 4px;
 }
-.mybutton li:hover{
+/* .mybutton li:hover{
 background:#694798;
 color: #fff;
-}
+} */
 #main-footer a:visited{
   color:rgba(245, 35, 35, 0);
 
@@ -160,12 +154,23 @@ ul {
   color:#000022
 }
 
-.label:hover{
+.label:hover {
   display:inline-block;
   vertical-align:top;
   width:100%;
   color:#fff;
+  background:#694798;
+  border-radius: 4px;
+
 }
+
+.label i {
+  color: #694798;
+  margin:auto;
+  padding-left:3px;
+  padding-right:3px;
+}
+
 .mybutton a:visited{
   color:rgb(0, 0, 0);
 
